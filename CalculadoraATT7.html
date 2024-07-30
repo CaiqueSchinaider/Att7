@@ -1,88 +1,48 @@
+Copiar código
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora</title>
-    <link rel="stylesheet" href="StyleATT7.css">
-</head>
-<body>
+    <link rel="stylesheet" href="StyleATT7.css" />
+  </head>
+  <body>
     <section id="sectionprincipal">
+      <h1>Calculadora</h1>
+      <section id="sectionsecundaria">
+        <!-- Botões de números -->
 
-        <h1>Calculadora</h1>
+        <!-- Ao ter essa nomeclatura fica mais tranquilo usar o css. teremos o button aplicavel tanto para o number quanto para os operadores
+         quando chegar no css, estilizaremos o .button de forma GLOBAL! se quisermos alterar algo especifico do number estilizaremos o button.number
+         mesma coisa com o button.operator / testa ai la no css esses casos. la ja existe o button.operator -->
+        <div class="button number" data-value="1">1</div>
+        <div class="button number" data-value="2">2</div>
+        <div class="button number" data-value="3">3</div>
+        <div class="button number" data-value="4">4</div>
+        <div class="button number" data-value="5">5</div>
+        <div class="button number" data-value="6">6</div>
+        <div class="button number" data-value="7">7</div>
+        <div class="button number" data-value="8">8</div>
+        <div class="button number" data-value="9">9</div>
+        <div class="button number" data-value="0">0</div>
 
+        <!-- Botões de operadores -->
+        <div class="button operator" data-value="+">+</div>
+        <div class="button operator" data-value="-">-</div>
+        <div class="button operator" data-value="*">*</div>
+        <div class="button operator" data-value="/">/</div>
+        <div class="button operator" data-value="=">=</div>
+        <div class="button operator" data-value="Del">Del</div>
 
-        <div>
-           <section id="sectionsecundaria">
-            <div id="n1">
-                1
-            </div>
-
-            <div id="n2">
-                2
-            </div>
-
-            <div id="n3">
-                3
-            </div>
-
-            <div id="n4">
-                4
-            </div>
-
-            <div id="n5">
-                5
-            </div>
-
-            <div id="n6">
-                6
-            </div>
-
-            <div id="n7">
-                7
-            </div>
-
-            <div id="n8">
-                8
-            </div>
-
-            <div id="n9">
-                9
-            </div>
-
-            <div id="n0">
-                0
-            </div>
-            <div id="soma">
-                +
-            </div>
-
-            <div id="subtração">
-                -
-            </div>
-
-            <div id="multiplicação">
-                x
-            </div>
-
-            <div id="divisão">
-                .
-            </div>
-
-            <div id="igual">
-                =
-            </div>
-
-            <div id="apagar">
-                Del
-            </div>
-            <div id="Leitura">  </div>  
-            <div id="Resultado"> Resultado </div>
-           </section>
-      
-           
+        <!-- Display -->
+        <!-- criei um pai para essas divs fora dos buttons pra ter um controle do espaçamento deles -->
+        <div class="result_container">
+          <div id="Leitura"></div>
+          <div id="Resultado">Resultado</div>
+        </div>
+      </section>
     </section>
-
     <script src="ScriptATT7.js"></script>
-</body>
+  </body>
 </html>
